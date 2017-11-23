@@ -2,13 +2,16 @@
 //  ViewController.m
 //  CustomTextView
 //
-//  Created by 陈晓军 on 2017/11/23.
+//  Created by *** on 2017/11/23.
 //  Copyright © 2017年 ChenXJ. All rights reserved.
 //
 
 #import "ViewController.h"
-
+#import "UIView+Function.h"
+#import "CustomTextView.h"
 @interface ViewController ()
+
+@property(nonatomic,strong)CustomTextView * cView;
 
 @end
 
@@ -16,13 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CustomTextView * cView = [[CustomTextView alloc]initWithFrame:CGRectMake(0, self.view.height - 50, self.view.width, 50)];
+    [self.view addSubview:cView];
+    _cView = cView;
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [_cView customResignFirstResponder];
 }
 
 

@@ -15,6 +15,8 @@
 		DA47095C1FC6732700F5F740 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA47095B1FC6732700F5F740 /* main.m */; };
 		DA4709661FC6732700F5F740 /* CustomTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4709651FC6732700F5F740 /* CustomTextViewTests.m */; };
 		DA4709711FC6732700F5F740 /* CustomTextViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4709701FC6732700F5F740 /* CustomTextViewUITests.m */; };
+		DA4709801FC6757800F5F740 /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA47097E1FC6757800F5F740 /* CustomTextView.m */; };
+		DA4709831FC6781C00F5F740 /* UIView+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4709821FC6781C00F5F740 /* UIView+Function.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		DA47096C1FC6732700F5F740 /* CustomTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4709701FC6732700F5F740 /* CustomTextViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextViewUITests.m; sourceTree = "<group>"; };
 		DA4709721FC6732700F5F740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA47097E1FC6757800F5F740 /* CustomTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextView.m; sourceTree = "<group>"; };
+		DA47097F1FC6757800F5F740 /* CustomTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextView.h; sourceTree = "<group>"; };
+		DA4709811FC6781C00F5F740 /* UIView+Function.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Function.h"; sourceTree = "<group>"; };
+		DA4709821FC6781C00F5F740 /* UIView+Function.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Function.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,14 @@
 		DA47094B1FC6732700F5F740 /* CustomTextView */ = {
 			isa = PBXGroup;
 			children = (
+				DA4709811FC6781C00F5F740 /* UIView+Function.h */,
+				DA4709821FC6781C00F5F740 /* UIView+Function.m */,
 				DA47094C1FC6732700F5F740 /* AppDelegate.h */,
 				DA47094D1FC6732700F5F740 /* AppDelegate.m */,
 				DA47094F1FC6732700F5F740 /* ViewController.h */,
 				DA4709501FC6732700F5F740 /* ViewController.m */,
+				DA47097F1FC6757800F5F740 /* CustomTextView.h */,
+				DA47097E1FC6757800F5F740 /* CustomTextView.m */,
 				DA4709521FC6732700F5F740 /* Main.storyboard */,
 				DA4709551FC6732700F5F740 /* Assets.xcassets */,
 				DA4709571FC6732700F5F740 /* LaunchScreen.storyboard */,
@@ -267,7 +277,9 @@
 			files = (
 				DA4709511FC6732700F5F740 /* ViewController.m in Sources */,
 				DA47095C1FC6732700F5F740 /* main.m in Sources */,
+				DA4709801FC6757800F5F740 /* CustomTextView.m in Sources */,
 				DA47094E1FC6732700F5F740 /* AppDelegate.m in Sources */,
+				DA4709831FC6781C00F5F740 /* UIView+Function.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
